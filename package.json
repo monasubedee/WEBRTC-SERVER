@@ -1,0 +1,24 @@
+{
+  "name": "webrtc-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/monasubedee/WEBRTC-SERVER.git"
+  },
+  "author": "Mona subedi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/monasubedee/WEBRTC-SERVER/issues"
+  },
+  "homepage": "https://github.com/monasubedee/WEBRTC-SERVER#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^4.4.0"
+  }
+}
