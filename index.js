@@ -13,6 +13,15 @@ const io = new Server(server,{
         origin:'*',
         methods:['GET','POST']
     }
+});
+
+io.on('connection',(socket) => {
+    socket.emit('me', socket.id);
+
+
+    socket.on('disconnect',() => {
+        socket.broadcast.emit('callended');
+    })
 })
 
 const PORT = process.env.PORT || 5000;
